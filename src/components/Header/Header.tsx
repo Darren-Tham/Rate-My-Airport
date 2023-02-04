@@ -2,7 +2,7 @@ import data from '../../assets/airports.json'
 import "./Header.css";
 import wave from "../../assets/wave.svg";
 
-const AIRPORTS = data.map()
+// const AIRPORTS = data.map()
 
 export default function Header() {
 
