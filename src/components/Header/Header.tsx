@@ -37,7 +37,6 @@ export default function Header() {
         <img src={wave} alt="wave graphic" />
         <div className="header-content">
           <img className="logo" src={rma} />
-          {/* <span className="header-command">Find an <b>Airport</b></span> */}
           <input
             className="header-input"
             type="text"
