@@ -10,16 +10,20 @@ export default function ReviewPage() {
             <div className='review-description'> 
                 <textarea></textarea>
             </div>
-            <div className='review-options'>
+            <div className='options'>
+            <div className='review-options-1'>
                 <p>Cleanliness</p>
                 <ReviewGauges onClick={handleInfo}/>
                 <p>Amendities</p>
                 <ReviewGauges onClick={handleInfo}/>
+            </div>
+            <div className='review-options-2'>
                 <p>Effiency</p>
                 <ReviewGauges onClick={handleInfo}/>
                 <p>Reputation</p>
                 <ReviewGauges onClick={handleInfo}/>
-            </div>
+            </div>  
+            </div>  
         </div>
     );
 }
