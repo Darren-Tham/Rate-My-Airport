@@ -8,7 +8,42 @@ import jakarta.persistence.Table;
 public class Comment {
 @Entity
 @Table(name = "Comment", schema="airports")
-public class Atlanta {
+public class ATL {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private String id;
+
+	@Column(name = "Airport")
+	private String airport;
+
+	@Column(name = "IATA")
+	private String iata;
+
+	@Column(name = "Rating")
+	private int rating;
+
+	@Column(name = "Date")
+	private String date;
+}
+
+public class LAX {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private String id;
+
+	@Column(name = "Airport")
+	private String airport;
+
+	@Column(name = "IATA")
+	private String iata;
+
+	@Column(name = "Rating")
+	private int rating;
+
+	@Column(name = "Date")
+	private String date;
+}
+public class JFK {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private String id;
@@ -26,5 +61,3 @@ public class Atlanta {
 	private String date;
 }
 }
-
-

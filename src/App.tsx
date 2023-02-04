@@ -1,8 +1,11 @@
-import Header from './components/Header/Header'
-import './App.css'
-
+import Header from "./components/Header/Header";
+import "./App.css";
+import Footer from "./components/Footer/Footer";
 export default function App() {
   return (
-    <Header />
-  )
+    <div className="loadscreen">
+      <Header />
+      <Footer />
+    </div>
+  );
 }
