@@ -5,10 +5,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-public class ATL {
+public class LAX {
 @Entity
-@Table(name = "ATL")
-public class Atlanta {
+@Table(name = "LAX")
+public class LosAngles {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
