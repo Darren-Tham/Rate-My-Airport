@@ -5,22 +5,26 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-public class ATL {
+public class Comment {
 @Entity
-@Table(name = "ATL")
+@Table(name = "Comment", schema="airports")
 public class Atlanta {
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private String id;
 
-	@Column(name = "Name")
-	private String title;
+	@Column(name = "Airport")
+	private String airport;
 
-	@Column(name = "City")
-	private String description;
+	@Column(name = "IATA")
+	private String iata;
 
-	@Column(name = "published")
-	private boolean published;
+	@Column(name = "Rating")
+	private int rating;
+
+	@Column(name = "Date")
+	private String date;
 }
 }
+
+
