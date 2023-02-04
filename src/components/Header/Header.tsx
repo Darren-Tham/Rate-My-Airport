@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import data from '../../assets/airports.json'
 import "./Header.css";
 import wave from "../../assets/wave.svg";
+import rma from '../../assets/ratemyairport.png'
 
 const AIRPORTS = data.map(({ NAME }) => NAME)
 
@@ -30,8 +31,8 @@ export default function Header() {
       <div className="header-container">
         <img src={wave} alt="wave graphic" />
         <div className="header-content">
-          <h1>RATE MY AIRPORT</h1>
-          <span className="header-command">Find an <b>Airport</b></span>
+          <img className="logo" src={rma} />
+          {/* <span className="header-command">Find an <b>Airport</b></span> */}
           <input
             className="header-input"
             type="text"
