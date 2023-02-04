@@ -38,7 +38,6 @@ export default function Header() {
       <div className="header-container">
         <img className="header-img" src={wave} alt="wave graphic" />
         <div className="header-content">
-          <img className="logo" src={rma} />
           <input
             className="header-input"
             type="text"
