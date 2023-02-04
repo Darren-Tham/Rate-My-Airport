@@ -32,6 +32,7 @@ export default function Header() {
           <img src={wave} alt="wave graphic" />
         </div>
         <div className="header-content">
+<<<<<<< HEAD
           <h1>Rate My Airport</h1>
           <span className="header-command">Find an <b>Airport</b></span>
           <input
@@ -42,6 +43,13 @@ export default function Header() {
             onChange={e => setUserInput(e.target.value)}
           />
           {userInput.length > 0 && renderDropDown()}
+=======
+          <h1></h1>
+          {/* <h1>RATE MY AIRPORT</h1> */}
+          {/* <span className="header-command">Find an <b>Airport</b></span> */}
+          <input className="header-input" type="text" placeholder="Airport Name"/>
+
+>>>>>>> 55b6521718e49483dc4e6872977c82cad8e33ab8
         </div>
       </div>
     </header>

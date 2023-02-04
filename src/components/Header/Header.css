@@ -1,6 +1,11 @@
 h1 {
   font-size: 50px;
   text-align: center;
+  background-image: url(../../assets/ratemyairportog.ai);
+  background-repeat: no-repeat;
+  width:600px;
+  height:500px;
+  
 }
 
 .header-container {
