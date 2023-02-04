@@ -8,3 +8,19 @@ img {
     margin-right: auto;
     width: 80%;
 }
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color:#5d578b;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  #atl {
+    transform: translate(480px, -270px);
+  }
+  #jfk {
+    transform: translate(600px, -395px);
+  }
+  #lax {
+    transform: translate(105px, -295px);
+  }
