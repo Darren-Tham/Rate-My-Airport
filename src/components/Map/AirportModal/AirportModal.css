@@ -1,0 +1,16 @@
+.modal {
+    width: 15%;
+    height: 20%;
+    text-align: center;
+    border: solid 1px;
+}
+
+.top-section-modal {
+    display: flex;
+    align-content: stretch;
+    
+}
+
+.top-section-modal p {
+    width: 50%;
+}
