@@ -1,5 +1,5 @@
 package com.ratemy.rma.repository;
 
-public class LAXRepository {
+public class CommentRepository {
     
 }
