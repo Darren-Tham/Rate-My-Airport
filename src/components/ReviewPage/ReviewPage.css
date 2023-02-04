@@ -7,3 +7,21 @@
     border: 1px solid;
     display: flex;
 }
+
+.options {
+    display: flex;
+}
+
+.review-options-1 {
+    position: relative;
+    width: 30%;
+    height: 40%;
+    left: 25%;
+}
+
+.review-options-2 {
+    position: relative;
+    width: 30%;
+    height: 40%;
+    left: 35%;
+}
