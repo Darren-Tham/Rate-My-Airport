@@ -11,7 +11,7 @@ export default function Header() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   function getDropDownTop() {
-    const marginBottom = 10
+    const marginBottom = 5
     const inputElem = inputRef.current
     if (inputElem === null) throw 'inputElem is null'
     const { offsetHeight, offsetTop } = inputElem
@@ -21,11 +21,13 @@ export default function Header() {
   function renderDropDown() {
     return (
       <div className="header-input-dropdown" style={{ top: `${getDropDownTop()}px` }}>
-        {AIRPORTS.map(({ NAME, CITY }) => (
-          <button className="header-input-dropdown-element">
-            <span>{NAME}</span>
-            <span>{CITY}</span>
-          </button>
+        {AIRPORTS
+          .filter(({ NAME }) => NAME.toLowerCase().includes(userInput.toLowerCase()))
+          .map(({ NAME, CITY }) => (
+            <button className="header-input-dropdown-element">
+              <span className="header-input-dropdown-element-name">{NAME}</span>
+              <span className="header-input-dropdown-element-city">{CITY}</span>
+            </button>
         ))}
       </div>
     ) 
