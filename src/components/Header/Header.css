@@ -28,3 +28,7 @@ h1 {
   outline: none;
   border: 2px solid black;
 }
+
+.header-input-dropdown {
+  position: absolute;
+}
