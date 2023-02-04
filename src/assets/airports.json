@@ -1,0 +1,26 @@
+[
+ {
+   "FIELD1": "1",
+   "FIELD2": "Hartsfield–Jackson Atlanta International Airport",
+   "FIELD3": "ATL",
+   "FIELD4": "Atlanta",
+   "FIELD5": "United States",
+   "FIELD6": "103,902,992"
+ },
+ {
+   "FIELD1": "2",
+   "FIELD2": "Los Angeles International Airport",
+   "FIELD3": "LAX",
+   "FIELD4": "Los Angeles",
+   "FIELD5": "United States",
+   "FIELD6": "84,557,968"
+ },
+ {
+   "FIELD1": "3",
+   "FIELD2": "O'Hare International Airport",
+   "FIELD3": "ORD",
+   "FIELD4": "Chicago",
+   "FIELD5": "United States",
+   "FIELD6": "79,828,183"
+ }
+]
