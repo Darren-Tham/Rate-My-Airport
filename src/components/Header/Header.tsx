@@ -28,9 +28,7 @@ export default function Header() {
   return (
     <header>
       <div className="header-container">
-        <div className="box">
-          <img src={wave} alt="wave graphic" />
-        </div>
+        <img src={wave} alt="wave graphic" />
         <div className="header-content">
           <h1>RATE MY AIRPORT</h1>
           <span className="header-command">Find an <b>Airport</b></span>
