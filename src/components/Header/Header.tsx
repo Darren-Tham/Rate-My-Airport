@@ -36,7 +36,7 @@ export default function Header() {
   return (
     <header>
       <div className="header-container">
-        <img src={wave} alt="wave graphic" />
+        <img className="header-img" src={wave} alt="wave graphic" />
         <div className="header-content">
           <img className="logo" src={rma} />
           <input
