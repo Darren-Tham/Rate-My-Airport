@@ -3,18 +3,18 @@
    "NAME": "Hartsfield–Jackson Atlanta International Airport",
    "IATA": "ATL",
    "CITY": "Atlanta",
-   "COUNTRY": "United States",
+   "COUNTRY": "United States"
  },
  {
    "NAME": "Los Angeles International Airport",
    "IATA": "LAX",
    "CITY": "Los Angeles",
-   "COUNTRY": "United States",
+   "COUNTRY": "United States"
  },
  {
    "NAME": "John F. Kennedy International Airport",
    "IATA": "JFK",
    "CITY": "New York",
-   "COUNTRY": "United States",
+   "COUNTRY": "United States"
  }
 ]
