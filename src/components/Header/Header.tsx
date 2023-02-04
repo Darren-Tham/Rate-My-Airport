@@ -13,7 +13,8 @@ export default function Header() {
           <img src={wave} alt="wave graphic" />
         </div>
         <div className="header-content">
-          <h1>RATE MY AIRPORT</h1>
+          <h1></h1>
+          {/* <h1>RATE MY AIRPORT</h1> */}
           {/* <span className="header-command">Find an <b>Airport</b></span> */}
           <input className="header-input" type="text" placeholder="Airport Name"/>
 
