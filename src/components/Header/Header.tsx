@@ -3,7 +3,7 @@ import data from '../../assets/airports.json'
 import "./Header.css";
 import wave from "../../assets/wave.svg";
 
-const AIRPORTS = data.map(({ NAME }) => NAME)
+const AIRPORTS = data.map(({ NAME, CITY }) => ({ NAME, CITY }))
 
 export default function Header() {
   const [userInput, setUserInput] = useState("")
@@ -20,7 +20,12 @@ export default function Header() {
   function renderDropDown() {
     return (
       <div className="header-input-dropdown" style={{ top: `${getDropDownTop()}px` }}>
-        Hello 
+        {AIRPORTS.map(({ NAME, CITY }) => (
+          <button className="header-input-dropdown-element">
+            <span>{NAME}</span>
+            <span>{CITY}</span>
+          </button>
+        ))}
       </div>
     ) 
   }

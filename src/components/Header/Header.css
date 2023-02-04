@@ -36,4 +36,11 @@ h1 {
 
 .header-input-dropdown {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-input-dropdown-element {
+  display: flex;
+  flex-direction: column;
 }
