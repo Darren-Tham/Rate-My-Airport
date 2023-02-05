@@ -1,15 +1,36 @@
+textarea {
+    resize: none;
+    width: 100%;
+    height: 70%;
+}
+
 .whole-page {
     width: 100vw;
     height: 100vh;
 }
 
 .rating {
+    position: relative;
     border: 1px solid;
     display: flex;
+    width: 10%;
+    height: 15%;
+    align-items: center;
+    justify-content: center;
+    left: 3%;
+    top: 25%;
 }
 
 .options {
     display: flex;
+}
+
+.review-description {
+    margin-top: 5%;
+    position: relative;
+    left: 25%;
+    width: 55%;
+    height: 20%;
 }
 
 .review-options-1 {
