@@ -2,11 +2,11 @@
   width: 100vw;
 }
 
-img {
+.map-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 1150px;
 }
 
 .dot {
@@ -19,12 +19,16 @@ img {
 }
 
 #atl {
-  bottom: 400px;
-  left: 915px;
+  /* bottom: 400px; */
+  /* left: 915px; */
 }
 
 #jfk {
+  /* bottom: 617px; */
+  /* left: 1145px; */
 }
 
 #lax {
+  /* bottom: 430px; */
+  /* left: 215px; */
 }
