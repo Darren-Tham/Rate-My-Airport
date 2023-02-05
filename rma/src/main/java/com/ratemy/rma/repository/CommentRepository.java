@@ -1,11 +1,6 @@
 package com.ratemy.rma.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-import com.ratemy.rma.model.Comment;
+import com.ratemy.rma.model.CommentModel;
 
-public interface CommentRepository extends JpaRepository<Comment, Long> {
-
-    List<Comment> findByLastName(String lastName);
-  
-    Comment findById(long id);
+public interface CommentRepository extends JpaRepository<CommentModel, Long> {
   }

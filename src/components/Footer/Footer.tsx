@@ -5,7 +5,7 @@ export default function Footer() {
     <footer>
       <div className="footer-container">
         <div className="footer-left">
-          <p> © built & designed for UGAHACKS</p>
+          <p> © BUILT & DESIGNED FOR UGAHACKS</p>
         </div>
         <div className="footer-right">
           <a href="https://github.com/Darren-Tham/Rate-My-Airport">
