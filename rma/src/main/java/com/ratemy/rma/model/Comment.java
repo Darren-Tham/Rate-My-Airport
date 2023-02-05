@@ -5,22 +5,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-public class CommentModel {
+
 @Entity
-@Table(name = "Comment", schema="airports")
+@Table(name = "comments", schema="airports")
 public class Comment {
-	// @Column(name = "IATA")
-	// private String iata;
-
-	// @Column(name = "Airport")
-	// private String airport;
-
-	// @Column(name = "Rating")
-	// private int rating;
-
-	// @Column(name = "Date")
-	// private String date;
-
 
 	private long id;
 	private String iata;
@@ -56,7 +44,7 @@ public class Comment {
    }
 
    @Column(name = "iata", nullable = false)
-   public String getFirstName() {
+   public String getIATA() {
 	   return iata;
    }
    public void setIATA(String iata) {
@@ -112,7 +100,7 @@ public class Comment {
    }
 
    @Column(name = "customerservice", nullable = false)
-   public float getCustomerservice() {
+   public float getCustomerService() {
 	   return customerservice;
    }
    public void setCustomerService(float customerservice) {
@@ -121,8 +109,8 @@ public class Comment {
 
    @Override
    public String toString() {
-	   return "Employee [id=" + id + ", iata=" + iata + ", airport=" + airport + ", date=" + date + ", cleanliness=" + cleanliness + ", amenities=" + amenities + ", customerservice=" + customerservice
+	   return "Comment [id=" + id + ", iata=" + iata + ", airport=" + airport + ", date=" + date + ", cleanliness=" + cleanliness + ", amenities=" + amenities + ", customerservice=" + customerservice
 	  + "]";
    }
 }
-}
+
