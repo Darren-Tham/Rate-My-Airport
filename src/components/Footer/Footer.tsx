@@ -8,7 +8,11 @@ export default function Footer() {
           <p> © BUILT & DESIGNED FOR UGAHACKS</p>
         </div>
         <div className="footer-right">
-          <a href="https://github.com/Darren-Tham/Rate-My-Airport">
+          <a
+            href="https://github.com/Darren-Tham/Rate-My-Airport"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="125"
