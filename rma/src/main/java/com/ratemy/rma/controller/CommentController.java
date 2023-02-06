@@ -25,7 +25,7 @@ import com.ratemy.rma.model.Comment;
 import com.ratemy.rma.repository.CommentRepository;
 
 @RestController
-@RequestMapping("/api/airport/reviews")
+@RequestMapping("/api/review")
 public class CommentController {
 
 	@Autowired
@@ -35,6 +35,7 @@ public class CommentController {
     public List<Comment> getAllComments() {
         return CommentRepository.findAll();
 	}
+    
     @GetMapping("/comments/{id}")
     public ResponseEntity<Comment> getCommentById(@PathVariable(value = "id") Long commentId)
         throws ResourceNotFoundException {
@@ -42,11 +43,11 @@ public class CommentController {
           .orElseThrow(() -> new ResourceNotFoundException("Comment not found for this id :: " + commentId));
         return ResponseEntity.ok().body(comment);
     }
+
 	@PostMapping("/comments")
     public Comment createComment(@Valid @RequestBody Comment comment) {
         return CommentRepository.save(comment);
     }
-
 
 	@PutMapping("/comments/{id}")
     public ResponseEntity<Comment> updateComment(@PathVariable(value = "id") Long commentId,
@@ -65,6 +66,7 @@ public class CommentController {
         final Comment updatedComment = CommentRepository.save(comment);
         return ResponseEntity.ok(updatedComment);
     }
+
     @DeleteMapping("/comments/{id}")
     public Map<String, Boolean> deleteComment(@PathVariable(value = "id") Long commentId)
          throws ResourceNotFoundException {

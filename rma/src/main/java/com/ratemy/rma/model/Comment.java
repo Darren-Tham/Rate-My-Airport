@@ -43,6 +43,7 @@ public class Comment {
 	   this.id = id;
    }
 
+   
    @Column(name = "iata", nullable = false)
    public String getIATA() {
 	   return iata;
@@ -50,6 +51,7 @@ public class Comment {
    public void setIATA(String iata) {
 	   this.iata = iata;
    }
+
 
    @Column(name = "airport", nullable = false)
    public String getAirport() {
@@ -59,6 +61,7 @@ public class Comment {
 	   this.airport = airport;
    }
 
+
    @Column(name = "date", nullable = false)
    public long getDate() {
 	   return date;
@@ -66,6 +69,7 @@ public class Comment {
    public void setDate(long date) {
 	   this.date = date;
    }
+
 
    @Column(name = "rating", nullable = false)
    public float getRating() {
@@ -75,6 +79,7 @@ public class Comment {
 	   this.rating = rating;
    }
 
+
    @Column(name = "cleanliness", nullable = false)
    public float getCleanliness() {
 	   return cleanliness;
@@ -83,6 +88,7 @@ public class Comment {
 	   this.cleanliness = cleanliness;
    }
    
+
    @Column(name = "efficiency", nullable = false)
    public float getEfficiency() {
 	   return efficiency;
@@ -91,6 +97,7 @@ public class Comment {
 	   this.efficiency = efficiency;
    }
    
+
    @Column(name = "amenities", nullable = false)
    public float getAmenities() {
 	   return amenities;
@@ -98,6 +105,7 @@ public class Comment {
    public void setAmenities(float amenities) {
 	   this.amenities = amenities;
    }
+
 
    @Column(name = "customerservice", nullable = false)
    public float getCustomerService() {
