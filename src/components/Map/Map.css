@@ -6,13 +6,13 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 1150px;
+  width: 100%;
 }
 
 .dot {
   width: 25px;
   aspect-ratio: 1 / 1;
-  background-color:#5d578b;
+  background-color: #5d578b;
   border-radius: 50%;
   display: inline-block;
   position: relative;

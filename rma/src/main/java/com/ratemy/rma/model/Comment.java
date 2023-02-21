@@ -5,22 +5,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-public class CommentModel {
+
 @Entity
-@Table(name = "Comment", schema="airports")
+@Table(name = "comments", schema="airports")
 public class Comment {
-	// @Column(name = "IATA")
-	// private String iata;
-
-	// @Column(name = "Airport")
-	// private String airport;
-
-	// @Column(name = "Rating")
-	// private int rating;
-
-	// @Column(name = "Date")
-	// private String date;
-
 
 	private long id;
 	private String iata;
@@ -55,13 +43,15 @@ public class Comment {
 	   this.id = id;
    }
 
+   
    @Column(name = "iata", nullable = false)
-   public String getFirstName() {
+   public String getIATA() {
 	   return iata;
    }
    public void setIATA(String iata) {
 	   this.iata = iata;
    }
+
 
    @Column(name = "airport", nullable = false)
    public String getAirport() {
@@ -71,6 +61,7 @@ public class Comment {
 	   this.airport = airport;
    }
 
+
    @Column(name = "date", nullable = false)
    public long getDate() {
 	   return date;
@@ -78,6 +69,7 @@ public class Comment {
    public void setDate(long date) {
 	   this.date = date;
    }
+
 
    @Column(name = "rating", nullable = false)
    public float getRating() {
@@ -87,6 +79,7 @@ public class Comment {
 	   this.rating = rating;
    }
 
+
    @Column(name = "cleanliness", nullable = false)
    public float getCleanliness() {
 	   return cleanliness;
@@ -95,6 +88,7 @@ public class Comment {
 	   this.cleanliness = cleanliness;
    }
    
+
    @Column(name = "efficiency", nullable = false)
    public float getEfficiency() {
 	   return efficiency;
@@ -103,6 +97,7 @@ public class Comment {
 	   this.efficiency = efficiency;
    }
    
+
    @Column(name = "amenities", nullable = false)
    public float getAmenities() {
 	   return amenities;
@@ -111,8 +106,9 @@ public class Comment {
 	   this.amenities = amenities;
    }
 
+
    @Column(name = "customerservice", nullable = false)
-   public float getCustomerservice() {
+   public float getCustomerService() {
 	   return customerservice;
    }
    public void setCustomerService(float customerservice) {
@@ -121,8 +117,8 @@ public class Comment {
 
    @Override
    public String toString() {
-	   return "Employee [id=" + id + ", iata=" + iata + ", airport=" + airport + ", date=" + date + ", cleanliness=" + cleanliness + ", amenities=" + amenities + ", customerservice=" + customerservice
+	   return "Comment [id=" + id + ", iata=" + iata + ", airport=" + airport + ", date=" + date + ", cleanliness=" + cleanliness + ", amenities=" + amenities + ", customerservice=" + customerservice
 	  + "]";
    }
 }
-}
+
